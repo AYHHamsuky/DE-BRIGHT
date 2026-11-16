@@ -1,4 +1,4 @@
-# De Bright College of Health Science and Technology website
+# DE BRIGHT College of Health Science and Technology website
 
 Laravel site with a sliding homepage banner, course pages, admissions info, gallery, news, an enquiry form and an admin panel.
 It uses plain CSS and JavaScript, so there is no `npm` or build step. That keeps it simple on shared hosting.
@@ -33,12 +33,12 @@ Run the tests with `php artisan test`.
 
 ## Put it on live hosting (cPanel)
 
-1. On your computer run `composer install --no-dev --optimize-autoloader`, then upload the whole project to a folder **above** `public_html` (for example `desky-app`).
+1. On your computer run `composer install --no-dev --optimize-autoloader`, then upload the whole project to a folder **above** `public_html` (for example `debright-app`).
 2. Copy everything inside the project's `public/` folder into `public_html`.
 3. Open `public_html/index.php` and change the two paths so they point to the app folder:
-   `__DIR__.'/../desky-app/vendor/autoload.php'` and `__DIR__.'/../desky-app/bootstrap/app.php'`
+   `__DIR__.'/../debright-app/vendor/autoload.php'` and `__DIR__.'/../debright-app/bootstrap/app.php'`
    (also the `storage/framework/maintenance.php` line).
-4. In cPanel create a MySQL database and user. Copy `.env.example` to `.env` inside `desky-app` and set:
+4. In cPanel create a MySQL database and user. Copy `.env.example` to `.env` inside `debright-app` and set:
    `APP_ENV=production`, `APP_DEBUG=false`, `APP_URL=https://yourdomain`, `DB_CONNECTION=mysql` and the `DB_*` values.
 5. Run `php artisan key:generate` and `php artisan migrate --seed --force` (cPanel Terminal or SSH).
 6. Make sure `storage`, `bootstrap/cache` and `public_html/uploads` are writable (permission 775).

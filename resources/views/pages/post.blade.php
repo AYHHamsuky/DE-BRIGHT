@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', $post->title.' | De Bright College')
+@section('title', $post->title.' | DE BRIGHT College')
 @section('description', $post->excerpt ?: \Illuminate\Support\Str::limit(strip_tags($post->body), 155))
 
 @section('content')

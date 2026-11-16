@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Page not found | De Bright College')
+@section('title', 'Page not found | DE BRIGHT College')
 
 @section('content')
 <section class="section">

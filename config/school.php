@@ -9,8 +9,8 @@
  */
 
 return [
-    'name' => 'De Bright College of Health Science and Technology',
-    'short_name' => 'De Bright College',
+    'name' => 'DE BRIGHT College of Health Science and Technology',
+    'short_name' => 'DE BRIGHT College',
     'motto' => 'Learning for Good Health',
 
     'address' => 'No. 27/28 Adjacent to General Hospital and KLM 127 Command, FRSC Office, Minna Road, Lapai, Lapai LGA, Niger State.',
@@ -25,7 +25,7 @@ return [
     'email' => null,
 
     // Used for the embedded Google map on the Contact page.
-    'map_query' => 'De Bright College of Health Science and Technology, Minna Road, Lapai, Niger State',
+    'map_query' => 'DE BRIGHT College of Health Science and Technology, Minna Road, Lapai, Niger State',
 
     // Entry requirements, taken from the school flyer.
     'requirements' => [

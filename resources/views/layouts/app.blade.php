@@ -1,5 +1,5 @@
 @php
-    $defaultDescription = 'De Bright College of Health Science and Technology, Lapai, Niger State. Diploma, National Diploma and Certificate programmes in community health, medical laboratory technology, health information management, environmental health, public health and pharmacy technology.';
+    $defaultDescription = 'DE BRIGHT College of Health Science and Technology, Lapai, Niger State. Diploma, National Diploma and Certificate programmes in community health, medical laboratory technology, health information management, environmental health, public health and pharmacy technology.';
     $navLinks = [
         'home' => 'Home',
         'about' => 'About',
@@ -67,7 +67,7 @@
 <header class="site-header">
     <div class="container">
         <a class="brand" href="{{ route('home') }}">
-            <img src="{{ asset('images/brand/logo.png') }}" alt="De Bright College logo">
+            <img src="{{ asset('images/brand/logo.png') }}" alt="DE BRIGHT College logo">
             <span>
                 <strong>{{ config('school.short_name') }}</strong>
                 <small>{{ config('school.motto') }}</small>
@@ -123,7 +123,7 @@
     </div>
 </footer>
 
-<a class="wa-float" href="https://wa.me/{{ config('school.whatsapp') }}?text={{ rawurlencode('Hello, I would like to know more about De Bright College.') }}" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+<a class="wa-float" href="https://wa.me/{{ config('school.whatsapp') }}?text={{ rawurlencode('Hello, I would like to know more about DE BRIGHT College.') }}" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
     <span aria-hidden="true">💬</span>
 </a>
 

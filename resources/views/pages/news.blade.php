@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'News | De Bright College of Health Science and Technology')
-@section('description', 'News and announcements from De Bright College of Health Science and Technology, Lapai.')
+@section('title', 'News | DE BRIGHT College of Health Science and Technology')
+@section('description', 'News and announcements from DE BRIGHT College of Health Science and Technology, Lapai.')
 
 @section('content')
 <div class="page-banner">

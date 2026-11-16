@@ -1,4 +1,4 @@
-/* De Bright College: homepage slider, mobile menu, gallery lightbox */
+/* DE BRIGHT College: homepage slider, mobile menu, gallery lightbox */
 (function () {
     'use strict';
 

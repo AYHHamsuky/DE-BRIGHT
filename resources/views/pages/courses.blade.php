@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Courses | De Bright College of Health Science and Technology')
-@section('description', 'Available courses at De Bright College: Community Health, Medical Laboratory Technology, Health Information Management, Environmental Health, Public Health and Pharmacy Technician.')
+@section('title', 'Courses | DE BRIGHT College of Health Science and Technology')
+@section('description', 'Available courses at DE BRIGHT College: Community Health, Medical Laboratory Technology, Health Information Management, Environmental Health, Public Health and Pharmacy Technician.')
 
 @section('content')
 <div class="page-banner">

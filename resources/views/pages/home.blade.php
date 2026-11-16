@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'De Bright College of Health Science and Technology | Lapai, Niger State')
+@section('title', 'DE BRIGHT College of Health Science and Technology | Lapai, Niger State')
 
 @section('content')
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us | De Bright College of Health Science and Technology')
-@section('description', 'Contact De Bright College of Health Science and Technology, Minna Road, Lapai, Niger State. Phone numbers, address, map and enquiry form.')
+@section('title', 'Contact Us | DE BRIGHT College of Health Science and Technology')
+@section('description', 'Contact DE BRIGHT College of Health Science and Technology, Minna Road, Lapai, Niger State. Phone numbers, address, map and enquiry form.')
 
 @section('content')
 <div class="page-banner">
@@ -33,7 +33,7 @@
                     <span><a href="https://wa.me/{{ config('school.whatsapp') }}" target="_blank" rel="noopener">Chat on WhatsApp</a></span>
                 </li>
             </ul>
-            <iframe class="map" loading="lazy" title="Map showing De Bright College"
+            <iframe class="map" loading="lazy" title="Map showing DE BRIGHT College"
                 src="https://www.google.com/maps?q={{ urlencode(config('school.map_query')) }}&output=embed"
                 allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

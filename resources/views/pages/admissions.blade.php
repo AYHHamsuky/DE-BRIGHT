@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Admissions | De Bright College of Health Science and Technology')
-@section('description', 'How to apply to De Bright College of Health Science and Technology, Lapai. Entry requirements for Diploma, Certificate and Direct Entry.')
+@section('title', 'Admissions | DE BRIGHT College of Health Science and Technology')
+@section('description', 'How to apply to DE BRIGHT College of Health Science and Technology, Lapai. Entry requirements for Diploma, Certificate and Direct Entry.')
 
 @section('content')
 <div class="page-banner">

@@ -71,7 +71,7 @@ class DatabaseSeeder extends Seeder
         }
 
         $slides = [
-            ['De Bright College of Health Science and Technology', 'images/slides/slide-1-banner.jpg'],
+            ['DE BRIGHT College of Health Science and Technology', 'images/slides/slide-1-banner.jpg'],
             ['Learning for Good Health', 'images/slides/slide-2-flyer.jpg'],
             ['Available courses and entry requirements', 'images/slides/slide-3-courses.jpg'],
         ];
@@ -106,10 +106,10 @@ class DatabaseSeeder extends Seeder
         }
 
         Post::create([
-            'title' => 'Applications are open at De Bright College',
+            'title' => 'Applications are open at DE BRIGHT College',
             'slug' => 'applications-are-open',
             'excerpt' => 'Collect your application form at the school and start your health career with us.',
-            'body' => "De Bright College of Health Science and Technology is receiving applications for its Diploma, National Diploma and Certificate programmes.\n\nTo apply, visit the school at No. 27/28 Adjacent to General Hospital and KLM 127 Command, FRSC Office, Minna Road, Lapai, to collect your application form. You can also call 08064837014, 08038284265 or 09066638080 for more information.",
+            'body' => "DE BRIGHT College of Health Science and Technology is receiving applications for its Diploma, National Diploma and Certificate programmes.\n\nTo apply, visit the school at No. 27/28 Adjacent to General Hospital and KLM 127 Command, FRSC Office, Minna Road, Lapai, to collect your application form. You can also call 08064837014, 08038284265 or 09066638080 for more information.",
             'is_published' => true,
             'published_at' => now(),
         ]);
