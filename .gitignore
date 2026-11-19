@@ -29,3 +29,6 @@ Thumbs.db
 # Files uploaded through the admin panel
 /public/uploads/*
 !/public/uploads/.gitkeep
+
+# Self-hosted Roundcube webmail (lives in ~/roundcube)
+/public/mail

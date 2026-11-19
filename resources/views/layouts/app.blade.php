@@ -60,6 +60,7 @@
             @foreach (config('school.phones') as $phone)
                 <a href="tel:+234{{ substr($phone, 1) }}">{{ $phone }}</a>
             @endforeach
+            <a href="{{ url('/mail/') }}">✉ Staff Email</a>
         </span>
     </div>
 </div>
