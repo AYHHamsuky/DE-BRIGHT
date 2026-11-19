@@ -26,6 +26,11 @@ class PageController extends Controller
         return view('pages.about');
     }
 
+    public function approval()
+    {
+        return view('pages.approval');
+    }
+
     public function courses()
     {
         return view('pages.courses', ['courses' => Course::active()->get()]);

@@ -31,6 +31,22 @@
 </section>
 
 <section class="section alt">
+    <div class="container two-col">
+        <div>
+            <a href="{{ route('approval') }}">
+                <img class="rounded" src="{{ asset(config('school.permit.image')) }}" alt="Niger State permit to operate as a private tertiary institution">
+            </a>
+        </div>
+        <div class="prose">
+            <span class="eyebrow">Government approval</span>
+            <h2>Permitted to operate by the Niger State Government</h2>
+            <p>The {{ config('school.permit.authority') }} has granted DE BRIGHT College operational consent. The college is registered and permitted to operate as a private tertiary institution in Niger State (Serial No. {{ config('school.permit.serial') }}, issued {{ \Illuminate\Support\Carbon::parse(config('school.permit.issued_on'))->format('j F Y') }}).</p>
+            <a class="btn btn-primary" href="{{ route('approval') }}">See the permit</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
     <div class="container">
         <div class="section-head">
             <span class="eyebrow">What to expect</span>

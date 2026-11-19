@@ -268,3 +268,45 @@ table.data tr:nth-child(even) td { background: #fffaf2; }
     .slides, .card, .gallery img { transition: none; }
     html { scroll-behavior: auto; }
 }
+
+/* Government approval */
+.approval-strip { padding: 8px 0 0; }
+.approval-strip a {
+    display: flex; align-items: center; gap: 18px; text-decoration: none; color: var(--ink);
+    background: var(--cream); border: 1px solid var(--line); border-left: 5px solid var(--yellow);
+    border-radius: var(--radius); padding: 14px 20px; transition: .2s;
+}
+.approval-strip a:hover { box-shadow: var(--shadow); }
+.approval-strip img { width: 120px; height: auto; border-radius: 6px; flex: none; }
+.approval-strip strong { display: block; color: var(--maroon-dark); font-size: 1.05rem; }
+.approval-strip small { display: block; color: var(--muted); }
+.approval-strip .go { margin-left: auto; font-weight: 600; color: var(--maroon); white-space: nowrap; }
+.permit-facts { display: grid; gap: 10px; margin: 0 0 24px; }
+.permit-facts div { display: grid; grid-template-columns: 170px 1fr; gap: 12px; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.permit-facts dt { font-weight: 600; color: var(--maroon-dark); }
+.permit-facts dd { margin: 0; }
+@media (max-width: 640px) {
+    .approval-strip a { flex-wrap: wrap; }
+    .approval-strip img { width: 90px; }
+    .approval-strip .go { margin-left: 0; }
+    .permit-facts div { grid-template-columns: 1fr; gap: 0; }
+}
+
+/* Student portal */
+.portal-nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; border-bottom: 2px solid var(--line); padding-bottom: 12px; }
+.portal-nav a, .portal-nav button {
+    text-decoration: none; color: var(--ink); font: inherit; font-weight: 500; padding: .5rem 1rem;
+    border-radius: 999px; background: none; border: 0; cursor: pointer;
+}
+.portal-nav a.active, .portal-nav a:hover { background: var(--cream); color: var(--maroon); }
+.portal-nav form { margin: 0 0 0 auto; }
+.portal-nav button { color: var(--maroon); }
+.portal-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 30px; }
+.portal-cards .card { padding: 20px; }
+.portal-cards .card:hover { transform: none; }
+.portal-cards small { display: block; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; }
+.portal-cards strong { display: block; font-size: 1.35rem; color: var(--maroon-dark); margin-top: 4px; }
+.portal-cards strong.due { color: #b3261e; }
+.portal-cards strong.clear { color: #1b5e2a; }
+.portal-cards span { color: var(--muted); font-size: .9rem; }
+.portal h2 { font-size: 1.3rem; }

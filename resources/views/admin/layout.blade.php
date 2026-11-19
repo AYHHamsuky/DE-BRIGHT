@@ -18,7 +18,13 @@
         'admin.courses.index' => ['Courses', 'admin.courses.*'],
         'admin.posts.index' => ['News', 'admin.posts.*'],
         'admin.enquiries.index' => ['Enquiries', 'admin.enquiries.*'],
+        'admin.students.index' => ['Students', 'admin.students.*'],
+        'admin.fees.index' => ['Fees', 'admin.fees.*'],
+        'admin.payments.index' => ['Payments', 'admin.payments.*'],
     ];
+    if (auth()->user()->isSuperAdmin()) {
+        $menu['admin.users.index'] = ['Staff', 'admin.users.*'];
+    }
 @endphp
 <div class="adm-top">
     <div class="wrap">
@@ -29,6 +35,7 @@
             </a>
         @endforeach
         <span class="spacer"></span>
+        <a href="{{ route('admin.account.edit') }}" class="{{ request()->routeIs('admin.account.*') ? 'on' : '' }}" title="{{ auth()->user()->role->label() }}">{{ auth()->user()->name }}</a>
         <a href="{{ route('home') }}" target="_blank" rel="noopener">View site</a>
         <form method="POST" action="{{ route('admin.logout') }}" style="margin:0">
             @csrf

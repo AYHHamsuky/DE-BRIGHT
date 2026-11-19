@@ -44,4 +44,22 @@ return [
     ],
 
     'how_to_apply' => 'Visit the school to collect your application form.',
+
+    // Government approval, taken from the signed permit.
+    'permit' => [
+        'authority' => 'Niger State Ministry of Tertiary Education',
+        'title' => 'Permit to Operate as a Private Tertiary Institution',
+        'serial' => '079',
+        'issued_on' => '2026-10-20',
+        'signatories' => [
+            ['name' => 'Hon. Adamu Abdullahi Sheshi', 'role' => 'Honourable Commissioner'],
+            ['name' => "Sirajo Sa'id", 'role' => 'Permanent Secretary'],
+        ],
+        'image' => 'images/brand/operating-permit.jpg',
+        'pdf' => 'documents/niger-state-operating-permit.pdf',
+    ],
+
+    // Students without an email address get a login email on this domain.
+    // Paystack needs an email for every payment, so one is always set.
+    'student_email_domain' => env('STUDENT_EMAIL_DOMAIN', 'students.debright.local'),
 ];

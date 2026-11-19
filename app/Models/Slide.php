@@ -18,6 +18,9 @@ class Slide extends Model
 
     public function imageUrl(): string
     {
-        return asset($this->image);
+        $path = public_path($this->image);
+
+        // Adds the file time so browsers fetch a replaced image instead of an old cached copy.
+        return asset($this->image).(is_file($path) ? '?v='.filemtime($path) : '');
     }
 }

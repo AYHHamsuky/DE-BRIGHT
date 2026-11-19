@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Enums\Role;
 use App\Models\Course;
 use App\Models\GalleryItem;
 use App\Models\Post;
@@ -34,9 +35,11 @@ class DatabaseSeeder extends Seeder
                 'name' => env('ADMIN_NAME', 'Site Admin'),
                 'email' => $email,
                 'password' => $password,
+                'role' => Role::SuperAdmin,
+                'is_active' => true,
             ]);
 
-            $this->command?->info("Admin created. Login at /admin/login with: {$email} / {$password}");
+            $this->command?->info("Super admin created. Login at /admin/login with: {$email} / {$password}");
         }
     }
 

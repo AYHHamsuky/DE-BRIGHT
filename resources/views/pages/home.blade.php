@@ -34,6 +34,20 @@
     </div>
 </section>
 
+{{-- Government approval --}}
+<section class="approval-strip">
+    <div class="container">
+        <a href="{{ route('approval') }}">
+            <img src="{{ asset(config('school.permit.image')) }}" alt="" width="120" height="78">
+            <span>
+                <strong>Approved by the Niger State Government</strong>
+                <small>{{ config('school.permit.title') }} &middot; {{ config('school.permit.authority') }} &middot; Serial No. {{ config('school.permit.serial') }}</small>
+            </span>
+            <span class="go">View permit &rarr;</span>
+        </a>
+    </div>
+</section>
+
 {{-- Why us --}}
 <section class="section">
     <div class="container">

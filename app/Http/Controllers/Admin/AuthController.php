@@ -20,10 +20,21 @@ class AuthController extends Controller
             'password' => ['required'],
         ]);
 
-        if (! Auth::attempt($credentials, $request->boolean('remember'))) {
+        if (! Auth::validate($credentials)) {
             return back()->withErrors(['email' => 'Wrong email or password.'])->onlyInput('email');
         }
 
+        $user = Auth::getProvider()->retrieveByCredentials($credentials);
+
+        if (! $user->isStaff()) {
+            return back()->withErrors(['email' => 'Students should log in through the Student Portal.'])->onlyInput('email');
+        }
+
+        if (! $user->is_active) {
+            return back()->withErrors(['email' => 'This account has been deactivated.'])->onlyInput('email');
+        }
+
+        Auth::login($user, $request->boolean('remember'));
         $request->session()->regenerate();
 
         return redirect()->intended(route('admin.dashboard'));

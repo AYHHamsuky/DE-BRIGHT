@@ -25,7 +25,7 @@ class SiteTest extends TestCase
 
     public function test_public_pages_load(): void
     {
-        foreach (['/about', '/courses', '/admissions', '/gallery', '/news', '/contact', '/sitemap.xml'] as $url) {
+        foreach (['/about', '/approval', '/portal/login', '/courses', '/admissions', '/gallery', '/news', '/contact', '/sitemap.xml'] as $url) {
             $this->get($url)->assertOk();
         }
     }

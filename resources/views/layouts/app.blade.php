@@ -83,6 +83,7 @@
             @foreach ($navLinks as $routeName => $label)
                 <a href="{{ route($routeName) }}" class="{{ request()->routeIs($routeName, $routeName.'.*') ? 'active' : '' }}">{{ $label }}</a>
             @endforeach
+            <a href="{{ route('portal.dashboard') }}" class="{{ request()->routeIs('portal.*') ? 'active' : '' }}">Student Portal</a>
             <a class="btn btn-primary btn-sm" href="{{ route('admissions') }}">Apply Now</a>
         </nav>
     </div>
@@ -97,6 +98,7 @@
         <div>
             <h4>{{ config('school.name') }}</h4>
             <p>{{ config('school.motto') }}. Training the next generation of health professionals in Lapai, Niger State.</p>
+            <p><a href="{{ route('approval') }}">✔ Approved by the Niger State Ministry of Tertiary Education (Permit No. {{ config('school.permit.serial') }})</a></p>
         </div>
         <div>
             <h4>Quick links</h4>
@@ -104,6 +106,9 @@
                 @foreach ($navLinks as $routeName => $label)
                     <li><a href="{{ route($routeName) }}">{{ $label }}</a></li>
                 @endforeach
+                <li><a href="{{ route('approval') }}">Government Approval</a></li>
+                <li><a href="{{ route('portal.login') }}">Student Portal</a></li>
+                <li><a href="{{ route('admin.login') }}">Staff Login</a></li>
             </ul>
         </div>
         <div>
